@@ -1,20 +1,28 @@
 import React from 'react';
 import  ReactDOM  from 'react-dom/client';
 
-const name = 'Your Name';
-const fruits = ['Apple', 'Banana', 'Orange', 'Apricot', 'Black rowan', 'Cranberry'];
+//[Bài tập] Tạo Element thể hiện thông tin của Trình duyệt bạn đang sử dụng
+
+
+
+// const name = 'Your Name';
+// const fruits = ['Apple', 'Banana', 'Orange', 'Apricot', 'Black rowan', 'Cranberry'];
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const tick = () => {
-    root.render(
-        <div>
-        <h1>Hello, world</h1>
-        <h2>It's is  {new Date().toLocaleTimeString()}.</h2>
-        </div>
-    )
-}
-setInterval(tick,1000);
+root.render(
+    <h4>Browser's details: {navigator.userAgent}</h4>
+)
+
+// const tick = () => {
+//     root.render(
+//         <div>
+//         <h1>Hello, world</h1>
+//         <h2>It's is  {new Date().toLocaleTimeString()}.</h2>
+//         </div>
+//     )
+// }
+// setInterval(tick,1000);
 // root.render(
 //         // React.createElement('h2',{style: {textAlign: 'center'}},name) Tạo element by syntax React.createElement
 //         <div>
