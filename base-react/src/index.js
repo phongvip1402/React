@@ -1,18 +1,16 @@
 import React from 'react';
 import  ReactDOM  from 'react-dom/client';
 
+
 //[Bài tập] Tạo Element thể hiện thông tin của Trình duyệt bạn đang sử dụng
-
-
-
-// const name = 'Your Name';
-// const fruits = ['Apple', 'Banana', 'Orange', 'Apricot', 'Black rowan', 'Cranberry'];
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <h4>Browser's details: {navigator.userAgent}</h4>
 )
+
+// const name = 'Your Name';
+// const fruits = ['Apple', 'Banana', 'Orange', 'Apricot', 'Black rowan', 'Cranberry'];
 
 // const tick = () => {
 //     root.render(
